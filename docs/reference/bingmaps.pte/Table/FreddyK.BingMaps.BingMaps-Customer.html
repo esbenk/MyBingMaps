@@ -81,6 +81,12 @@
 
 
 
+  	<div class="summaryHolder">
+  		<div class="summary">
+			<p>The BingMaps Customer table. It contains the geocoded addresses for a Customer.</p>
+
+  		</div>
+  	</div>
 
 
   	<h2 id="fields">Fields</h2>
@@ -99,7 +105,8 @@
 								Code[20]
 					   
   					</td>
-  					<td></td>
+  					<td><p>The Customer No.</p>
+</td>
   				</tr>
   				<tr>
   					<td>Geocoded</td>
@@ -107,7 +114,34 @@
 								Integer
 					   
   					</td>
-  					<td></td>
+  					<td><p>Contains the status for the geocoding of the address.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1</td>
+<td>Unsuccessful</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Unsuccessful</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Unsuccessful</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Unsuccessful</td>
+</tr>
+</tbody>
+</table>
+</td>
   				</tr>
   				<tr>
   					<td>Latitude</td>
