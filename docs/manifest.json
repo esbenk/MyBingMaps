@@ -1,0 +1,162 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/src/MyBingMaps/.tmp",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Geocode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Geocode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Show-All.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/BingMaps-Show-All.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Module/BingMaps.PTE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Module/BingMaps.PTE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/BingMaps-Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/BingMaps-Customer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/BingMaps-CustomerMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/BingMaps-CustomerMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/BingMaps-Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/BingMaps-Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/BingMaps-Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/BingMaps-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/PageExtension/BingMaps-Cust-Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/PageExtension/BingMaps-Cust-Card.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/PageExtension/BingMaps-Cust-List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/PageExtension/BingMaps-Cust-List.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Table/BingMaps-Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Table/BingMaps-Customer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Table/BingMaps-Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Table/BingMaps-Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
