@@ -70,6 +70,75 @@ references:
 - uid: F:Table::BingMaps_Settings.SystemRowVersion
   name: SystemRowVersion
   href: reference/bingmaps.pte/Table/BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.Address
+  name: Address
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.Geocoded
+  name: Geocoded
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.Latitude
+  name: Latitude
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.Longitude
+  name: Longitude
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.No#
+  name: "\"No.\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemCreatedAt
+  name: SystemCreatedAt
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemCreatedBy
+  name: SystemCreatedBy
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemId
+  name: SystemId
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemModifiedAt
+  name: SystemModifiedAt
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemModifiedBy
+  name: SystemModifiedBy
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.SystemRowVersion
+  name: SystemRowVersion
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#BingMaps_Customer.Zoom
+  name: Zoom
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.BingMaps_Key
+  name: "\"BingMaps Key\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.BingMaps_Key_OK
+  name: "\"BingMaps Key OK\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.BingMaps_PK
+  name: "\"BingMaps PK\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.BingMaps_WS_Key
+  name: "\"BingMaps WS Key\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.BingMaps_WS_Username
+  name: "\"BingMaps WS Username\""
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemCreatedAt
+  name: SystemCreatedAt
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemCreatedBy
+  name: SystemCreatedBy
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemId
+  name: SystemId
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemModifiedAt
+  name: SystemModifiedAt
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemModifiedBy
+  name: SystemModifiedBy
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: F:Table::FreddyK#BingMaps#Setup#BingMaps_Settings.SystemRowVersion
+  name: SystemRowVersion
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html
 - uid: M:Codeunit::BingMaps_Geocode.Geocode(Text,Decimal@,Decimal@,Text@):Boolean
   name: Geocode
   href: reference/bingmaps.pte/Codeunit/BingMaps-Geocode.html
@@ -94,9 +163,36 @@ references:
 - uid: M:Codeunit::BingMaps_Show_All.Escape(Text):Text
   name: Escape
   href: reference/bingmaps.pte/Codeunit/BingMaps-Show-All.html
+- uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.Geocode(Text,Decimal@,Decimal@,Text@):Boolean
+  name: Geocode
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html
+- uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.GeocodeCustomer(Customer,BingMaps_Customer@,Text@):Boolean
+  name: GeocodeCustomer
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html
+- uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.GeocodeCustomer(Customer)
+  name: GeocodeCustomer
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html
+- uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Show_All.Escape(Text):Text
+  name: Escape
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Show-All.html
+- uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.GetSettings(BingMaps_Settings@,Boolean@):Boolean
+  name: GetSettings
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html
+- uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.GetSettings(BingMaps_Settings@):Boolean
+  name: GetSettings
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html
+- uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.SetupBingMapsIntegration(Notification)
+  name: SetupBingMapsIntegration
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html
+- uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.TestSettings(BingMaps_Settings@,Text@):Boolean
+  name: TestSettings
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html
 - uid: M:Page::BingMaps_CustomerMap.UpdateMap
   name: UpdateMap
   href: reference/bingmaps.pte/Page/BingMaps-CustomerMap.html
+- uid: M:Page::FreddyK#BingMaps#BingMaps_CustomerMap.UpdateMap
+  name: UpdateMap
+  href: reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-CustomerMap.html
 - uid: N:Module::BingMaps.PTE
   name: BingMaps.PTE
   summary: >
@@ -117,6 +213,20 @@ references:
   name: "\"BingMaps Show All\""
   fqName: "\"BingMaps Show All\""
   href: reference/bingmaps.pte/Codeunit/BingMaps-Show-All.html
+- uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Geocode
+  name: "\"BingMaps Geocode\""
+  fqName: FreddyK.BingMaps."BingMaps Geocode"
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html
+- uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Show_All
+  name: "\"BingMaps Show All\""
+  fqName: FreddyK.BingMaps."BingMaps Show All"
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Show-All.html
+- uid: O:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup
+  name: "\"BingMaps Setup\""
+  summary: >
+    <p sourcefile="reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.yml" sourcestartlinenumber="1" jsonPath="/summary">This codeunit is used to setup the BingMaps Integration</p>
+  fqName: FreddyK.BingMaps.Setup."BingMaps Setup"
+  href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html
 - uid: O:Page::BingMaps_Customer
   name: "\"BingMaps Customer\""
   fqName: "\"BingMaps Customer\""
@@ -133,6 +243,22 @@ references:
   name: "\"BingMaps Setup\""
   fqName: "\"BingMaps Setup\""
   href: reference/bingmaps.pte/Page/BingMaps-Setup.html
+- uid: O:Page::FreddyK#BingMaps#BingMaps_Customer
+  name: "\"BingMaps Customer\""
+  fqName: FreddyK.BingMaps."BingMaps Customer"
+  href: reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: O:Page::FreddyK#BingMaps#BingMaps_CustomerMap
+  name: "\"BingMaps CustomerMap\""
+  fqName: FreddyK.BingMaps."BingMaps CustomerMap"
+  href: reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-CustomerMap.html
+- uid: O:Page::FreddyK#BingMaps#Setup#BingMaps_Settings
+  name: "\"BingMaps Settings\""
+  fqName: FreddyK.BingMaps.Setup."BingMaps Settings"
+  href: reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Settings.html
+- uid: O:Page::FreddyK#BingMaps#Setup#BingMaps_Setup
+  name: "\"BingMaps Setup\""
+  fqName: FreddyK.BingMaps.Setup."BingMaps Setup"
+  href: reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Setup.html
 - uid: O:PageExtension::BingMaps_Cust_Card
   name: "\"BingMaps Cust Card\""
   fqName: "\"BingMaps Cust Card\""
@@ -141,6 +267,14 @@ references:
   name: "\"BingMaps Cust List\""
   fqName: "\"BingMaps Cust List\""
   href: reference/bingmaps.pte/PageExtension/BingMaps-Cust-List.html
+- uid: O:PageExtension::FreddyK#BingMaps#BingMaps_Cust_Card
+  name: "\"BingMaps Cust Card\""
+  fqName: FreddyK.BingMaps."BingMaps Cust Card"
+  href: reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-Card.html
+- uid: O:PageExtension::FreddyK#BingMaps#BingMaps_Cust_List
+  name: "\"BingMaps Cust List\""
+  fqName: FreddyK.BingMaps."BingMaps Cust List"
+  href: reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-List.html
 - uid: O:Table::BingMaps_Customer
   name: "\"BingMaps Customer\""
   fqName: "\"BingMaps Customer\""
@@ -149,3 +283,11 @@ references:
   name: "\"BingMaps Settings\""
   fqName: "\"BingMaps Settings\""
   href: reference/bingmaps.pte/Table/BingMaps-Settings.html
+- uid: O:Table::FreddyK#BingMaps#BingMaps_Customer
+  name: "\"BingMaps Customer\""
+  fqName: FreddyK.BingMaps."BingMaps Customer"
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html
+- uid: O:Table::FreddyK#BingMaps#Setup#BingMaps_Settings
+  name: "\"BingMaps Settings\""
+  fqName: FreddyK.BingMaps.Setup."BingMaps Settings"
+  href: reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html

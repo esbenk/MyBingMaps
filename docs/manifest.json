@@ -45,6 +45,36 @@
     },
     {
       "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Show-All.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Show-All.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.Setup.BingMaps-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
       "source_relative_path": "reference/bingmaps.pte/Module/BingMaps.PTE.yml",
       "output": {
         ".html": {
@@ -94,6 +124,46 @@
       "version": ""
     },
     {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-Customer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-CustomerMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.BingMaps-CustomerMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Page/FreddyK.BingMaps.Setup.BingMaps-Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -120,6 +190,32 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-Card.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-List.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/PageExtension/FreddyK.BingMaps.BingMaps-Cust-List.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "BusinessCentralApplicationObject",
       "source_relative_path": "reference/bingmaps.pte/Table/BingMaps-Customer.yml",
       "output": {
@@ -135,6 +231,26 @@
       "output": {
         ".html": {
           "relative_path": "reference/bingmaps.pte/Table/BingMaps-Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Table/FreddyK.BingMaps.BingMaps-Customer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/bingmaps.pte/Table/FreddyK.BingMaps.Setup.BingMaps-Settings.html"
         }
       },
       "version": ""
