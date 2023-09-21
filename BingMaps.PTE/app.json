@@ -1,0 +1,48 @@
+﻿{
+    "id":  "165d73c1-39a4-4fb6-85a5-925edc1684fb",
+    "name":  "BingMaps.PTE",
+    "publisher":  "Freddy Kristiansen",
+    "version":  "4.4.785.0",
+    "brief":  "BingMaps Integration",
+    "description":  "BingMaps Integration App with geocode functionality and map control",
+    "platform":  "20.0.39668.40349",
+    "application":  "20.1.39764.40432",
+    "runtime":  "8.0",
+    "logo":  "logo/bingmaps256x240.png",
+    "url":  "https://dev.azure.com/businesscentralapps/BingMaps.PTE",
+    "EULA":  "https://dev.azure.com/businesscentralapps/BingMaps.PTE",
+    "privacyStatement":  "https://dev.azure.com/businesscentralapps/BingMaps.PTE",
+    "help":  "https://dev.azure.com/businesscentralapps/BingMaps.PTE",
+    "target":  "Cloud",
+    "screenshots":  [
+
+                    ],
+    "dependencies":  [
+
+                     ],
+    "idRanges":  [
+                     {
+                         "from":  74119,
+                         "to":  74168
+                     }
+                 ],
+    "features":  [
+
+                 ],
+    "resourceExposurePolicy":  {
+                                   "allowDebugging":  true,
+                                   "allowDownloadingSource":  true,
+                                   "includeSourceInSymbolFile":  true
+                               },
+    "applicationInsightsConnectionString":  "InstrumentationKey=84bd9223-67d4-4378-8590-9e4a46023be2;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/",
+    "contextSensitiveHelpUrl":  "https://dev.azure.com/businesscentralapps/BingMaps.PTE",
+    "supportedLocales":  [
+                             "en-US"
+                         ],
+    "internalsVisibleTo":  [
+
+                           ],
+    "keyVaultUrls":  [
+
+                     ]
+}

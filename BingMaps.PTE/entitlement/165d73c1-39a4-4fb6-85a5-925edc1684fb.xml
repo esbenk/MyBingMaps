@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entitlement MetadataVersion="130000" Name="165d73c1-39a4-4fb6-85a5-925edc1684fb" Type="Implicit" xmlns="urn:schemas-microsoft-com:dynamics:NAV:MetaObjects">
+  <ObjectEntitlements>
+    <Permission Type="0" ID="74120" Value="15" />
+    <Permission Type="0" ID="74122" Value="15" />
+    <Permission Type="1" ID="74120" Value="16" />
+    <Permission Type="1" ID="74122" Value="16" />
+    <Permission Type="5" ID="74120" Value="16" />
+    <Permission Type="5" ID="74123" Value="16" />
+    <Permission Type="5" ID="74122" Value="16" />
+    <Permission Type="8" ID="74124" Value="16" />
+    <Permission Type="8" ID="74121" Value="16" />
+    <Permission Type="8" ID="74125" Value="16" />
+    <Permission Type="8" ID="74122" Value="16" />
+  </ObjectEntitlements>
+</Entitlement>
