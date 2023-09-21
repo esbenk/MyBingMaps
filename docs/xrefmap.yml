@@ -109,6 +109,8 @@ references:
   href: reference/bingmaps.pte/Codeunit/BingMaps-Geocode.html
 - uid: O:Codeunit::BingMaps_Setup
   name: "\"BingMaps Setup\""
+  summary: >
+    <p sourcefile="reference/bingmaps.pte/Codeunit/BingMaps-Setup.yml" sourcestartlinenumber="1" jsonPath="/summary">This codeunit is used to setup the BingMaps Integration</p>
   fqName: "\"BingMaps Setup\""
   href: reference/bingmaps.pte/Codeunit/BingMaps-Setup.html
 - uid: O:Codeunit::BingMaps_Show_All

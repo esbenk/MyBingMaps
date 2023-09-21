@@ -1,3 +1,6 @@
+/// <summary>
+/// This codeunit is used to setup the BingMaps Integration
+/// </summary>
 codeunit 74123 "BingMaps Setup"
 {
     [EventSubscriber(ObjectType::Table, Database::"Service Connection", 'OnRegisterServiceConnection', '', true, true)]
