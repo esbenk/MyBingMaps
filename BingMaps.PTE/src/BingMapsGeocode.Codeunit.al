@@ -95,6 +95,14 @@ codeunit 74120 "BingMaps Geocode"
         exit(false);
     end;
 
+    /// <summary>
+    /// Geocode an address using BingMaps
+    /// </summary>
+    /// <param name="BingMapsQuery">The address to encode</param>
+    /// <param name="Latitude">The resulting latitude</param>
+    /// <param name="Longitude">The resulting longitude</param>
+    /// <param name="ErrorText">Error code if encoding failed</param>
+    /// <returns>true if address is encoded succesfully</returns>
     procedure Geocode(BingMapsQuery: Text; var Latitude: Decimal; var Longitude: Decimal; var ErrorText: Text): Boolean
     var
         BingMapsSettings: Record "BingMaps Settings";

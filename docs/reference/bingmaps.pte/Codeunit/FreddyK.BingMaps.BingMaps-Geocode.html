@@ -195,6 +195,12 @@
    <h3 class="memberNameHolder">Geocode</h3>
    <div class="memberInfo">
 
+   		<div class="summaryHolder">
+   			<div class="summary">
+				<p>Geocode an address using BingMaps</p>
+
+   			</div>
+   		</div>
 
    		<pre><code dir="ltr" class="hljs lang-al">procedure Geocode(BingMapsQuery: Text, var Latitude: Decimal, var Longitude: Decimal, var ErrorText: Text): Boolean</code></pre>
 
@@ -216,7 +222,8 @@
 										Text
    							</td>
    							<td>
-								
+								<p>The address to encode</p>
+
    							</td>
    						</tr>
    						<tr>
@@ -227,7 +234,8 @@
 										Decimal
    							</td>
    							<td>
-								
+								<p>The resulting latitude</p>
+
    							</td>
    						</tr>
    						<tr>
@@ -238,7 +246,8 @@
 										Decimal
    							</td>
    							<td>
-								
+								<p>The resulting longitude</p>
+
    							</td>
    						</tr>
    						<tr>
@@ -249,7 +258,8 @@
 										Text
    							</td>
    							<td>
-								
+								<p>Error code if encoding failed</p>
+
    							</td>
    						</tr>
    				</tbody>
@@ -269,7 +279,8 @@
                 Boolean
                </td>
    						<td>
-							
+							<p>true if address is encoded succesfully</p>
+
    						</td>
    					</tr>
    				</tbody>

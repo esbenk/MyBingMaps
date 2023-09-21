@@ -14,8 +14,11 @@ table 74120 "BingMaps Customer"
         {
             DataClassification = CustomerContent;
         }
+
         /// <summary>
-        /// Contains the status for the geocoding of the address.
+        /// Contains the status for the geocoding of the address. 
+        /// The status values are:
+        ///
         /// <list type="table">
         ///   <listheader>
         ///     <term>Value</term>
@@ -23,19 +26,15 @@ table 74120 "BingMaps Customer"
         ///   </listheader>
         ///   <item>
         ///     <term>-1</term>
-        ///     <description>Unsuccessful</description>
+        ///     <description>Geocoding not possible</description>
         ///   </item>
         ///   <item>
         ///     <term>0</term>
-        ///     <description>Unsuccessful</description>
+        ///     <description>Uninitialized</description>
         ///   </item>
         ///   <item>
         ///     <term>1</term>
-        ///     <description>Unsuccessful</description>
-        ///   </item>
-        ///   <item>
-        ///     <term>2</term>
-        ///     <description>Unsuccessful</description>
+        ///     <description>Address geocoded</description>
         ///   </item>
         /// </list>
         /// </summary>
@@ -44,18 +43,27 @@ table 74120 "BingMaps Customer"
             DataClassification = CustomerContent;
         }
 
+        /// <summary>
+        /// The latitude of the address.
+        /// </summary>
         field(74122; "Latitude"; Decimal)
         {
             DecimalPlaces = 3 : 5;
             DataClassification = EndUserIdentifiableInformation;
         }
 
+        /// <summary>
+        /// The longitude of the address.
+        /// </summary>
         field(74123; "Longitude"; Decimal)
         {
             DecimalPlaces = 3 : 5;
             DataClassification = EndUserIdentifiableInformation;
         }
 
+        /// <summary>
+        /// The zoom level of the address.
+        /// </summary>
         field(74124; "Zoom"; Integer)
         {
             DataClassification = CustomerContent;
