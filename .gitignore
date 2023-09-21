@@ -16,7 +16,6 @@ rad.json
 .alcache/
 .altemplates/
 .snapshots/
-docfx/reference/
 .tmp/reference/
 cache_*
 ~$*
