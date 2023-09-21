@@ -1,0 +1,39 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"BingMaps Setup"'
+alId: ID 74122
+baseKind: Page
+kind: Page
+parent: 'N:Module::BingMaps.PTE::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Page](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-page-object)'
+objectProperties:
+- name: DeleteAllowed
+  value: "False"
+  promoted: false
+- name: InsertAllowed
+  value: "False"
+  promoted: false
+- name: PageType
+  value: Card
+  promoted: true
+- name: SourceTable
+  value: "74122"
+  promoted: true
+  xrefType:
+    xref: O:Table::BingMaps_Settings
+    name: '"BingMaps Settings"'
+    isExternal: false
+- name: UsageCategory
+  value: Administration
+  promoted: false
+- name: ApplicationArea
+  value: '#All'
+  promoted: false
+- name: Caption
+  value: BingMaps Setup
+  promoted: false
+commentId: O:Page::BingMaps Setup
+uid: O:Page::BingMaps_Setup
+name: '"BingMaps Setup"'

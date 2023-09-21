@@ -1,0 +1,17 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"BingMaps Cust List"'
+alId: ID 74123
+baseKind: Page
+kind: PageExtension
+parent: 'N:Module::BingMaps.PTE::Namespace::'
+langs:
+- al
+extends:
+  xref: O:Page::Microsoft#Sales#Customer#Customer_List
+  name: Microsoft.Sales.Customer."Customer List"
+  isExternal: false
+seeAlso:
+- '[Page Extension](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-page-ext-object)'
+commentId: O:PageExtension::BingMaps Cust List
+uid: O:PageExtension::BingMaps_Cust_List
+name: '"BingMaps Cust List"'

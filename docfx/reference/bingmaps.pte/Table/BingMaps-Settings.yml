@@ -1,0 +1,69 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"BingMaps Settings"'
+alId: ID 74122
+baseKind: Table
+kind: Table
+parent: 'N:Module::BingMaps.PTE::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Table](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-table-object)'
+fields:
+- type:
+    name: Code[10]
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.BingMaps_PK
+  name: '"BingMaps PK"'
+- type:
+    name: Text[80]
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.BingMaps_Key
+  name: '"BingMaps Key"'
+- type:
+    name: Boolean
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.BingMaps_Key_OK
+  name: '"BingMaps Key OK"'
+- type:
+    name: Text[40]
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.BingMaps_WS_Username
+  name: '"BingMaps WS Username"'
+- type:
+    name: Text[80]
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.BingMaps_WS_Key
+  name: '"BingMaps WS Key"'
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemId
+  name: SystemId
+- type:
+    name: DateTime
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemCreatedAt
+  name: SystemCreatedAt
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemCreatedBy
+  name: SystemCreatedBy
+- type:
+    name: DateTime
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemModifiedAt
+  name: SystemModifiedAt
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemModifiedBy
+  name: SystemModifiedBy
+- type:
+    name: BigInteger
+    isExternal: true
+  uid: F:Table::BingMaps_Settings.SystemRowVersion
+  name: SystemRowVersion
+commentId: O:Table::BingMaps Settings
+uid: O:Table::BingMaps_Settings
+name: '"BingMaps Settings"'

@@ -1,0 +1,72 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: FreddyK.BingMaps.Setup."BingMaps Setup"
+alId: ID 74123
+namespace: FreddyK.BingMaps.Setup
+baseKind: Codeunit
+kind: Codeunit
+parent: N:Module::BingMaps.PTE::Namespace::FreddyK.BingMaps.Setup
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+methods:
+- syntax:
+    content: 'procedure TestSettings(var BingMapsSettings: Record "BingMaps Settings", var ErrorText: Text): Boolean'
+    parameters:
+    - id: BingMapsSettings
+      parameterType:
+        name: Record "BingMaps Settings"
+        isExternal: true
+    - id: ErrorText
+      parameterType:
+        name: Text
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: false
+  uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.TestSettings(BingMaps_Settings@,Text@):Boolean
+  name: TestSettings
+- syntax:
+    content: 'procedure SetupBingMapsIntegration(notification: Notification)'
+    parameters:
+    - id: notification
+      parameterType:
+        name: Notification
+        isExternal: true
+  uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.SetupBingMapsIntegration(Notification)
+  name: SetupBingMapsIntegration
+- syntax:
+    content: 'procedure GetSettings(var BingMapsSettings: Record "BingMaps Settings"): Boolean'
+    parameters:
+    - id: BingMapsSettings
+      parameterType:
+        name: Record "BingMaps Settings"
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: false
+  uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.GetSettings(BingMaps_Settings@):Boolean
+  name: GetSettings
+- syntax:
+    content: 'procedure GetSettings(var BingMapsSettings: Record "BingMaps Settings", var WsUserSet: Boolean): Boolean'
+    parameters:
+    - id: BingMapsSettings
+      parameterType:
+        name: Record "BingMaps Settings"
+        isExternal: true
+    - id: WsUserSet
+      parameterType:
+        name: Boolean
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: false
+  uid: M:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup.GetSettings(BingMaps_Settings@,Boolean@):Boolean
+  name: GetSettings
+commentId: O:Codeunit::FreddyK#BingMaps#Setup#BingMaps Setup
+summary: This codeunit is used to setup the BingMaps Integration
+uid: O:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup
+name: '"BingMaps Setup"'

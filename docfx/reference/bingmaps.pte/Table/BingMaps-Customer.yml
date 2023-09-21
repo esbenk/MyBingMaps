@@ -1,0 +1,74 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"BingMaps Customer"'
+alId: ID 74120
+baseKind: Table
+kind: Table
+parent: 'N:Module::BingMaps.PTE::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Table](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-table-object)'
+fields:
+- type:
+    name: Code[20]
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.No#
+  name: '"No."'
+- type:
+    name: Integer
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.Geocoded
+  name: Geocoded
+- type:
+    name: Decimal
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.Latitude
+  name: Latitude
+- type:
+    name: Decimal
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.Longitude
+  name: Longitude
+- type:
+    name: Integer
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.Zoom
+  name: Zoom
+- type:
+    name: Text[200]
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.Address
+  name: Address
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemId
+  name: SystemId
+- type:
+    name: DateTime
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemCreatedAt
+  name: SystemCreatedAt
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemCreatedBy
+  name: SystemCreatedBy
+- type:
+    name: DateTime
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemModifiedAt
+  name: SystemModifiedAt
+- type:
+    name: Guid
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemModifiedBy
+  name: SystemModifiedBy
+- type:
+    name: BigInteger
+    isExternal: true
+  uid: F:Table::BingMaps_Customer.SystemRowVersion
+  name: SystemRowVersion
+commentId: O:Table::BingMaps Customer
+uid: O:Table::BingMaps_Customer
+name: '"BingMaps Customer"'

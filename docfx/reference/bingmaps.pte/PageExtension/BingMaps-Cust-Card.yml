@@ -1,0 +1,17 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"BingMaps Cust Card"'
+alId: ID 74120
+baseKind: Page
+kind: PageExtension
+parent: 'N:Module::BingMaps.PTE::Namespace::'
+langs:
+- al
+extends:
+  xref: O:Page::Microsoft#Sales#Customer#Customer_Card
+  name: Microsoft.Sales.Customer."Customer Card"
+  isExternal: false
+seeAlso:
+- '[Page Extension](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-page-ext-object)'
+commentId: O:PageExtension::BingMaps Cust Card
+uid: O:PageExtension::BingMaps_Cust_Card
+name: '"BingMaps Cust Card"'

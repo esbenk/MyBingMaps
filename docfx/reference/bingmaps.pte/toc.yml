@@ -1,0 +1,47 @@
+﻿items:
+- name: Overview
+  uid: N:Module::BingMaps.PTE
+- name: Reference
+  items:
+  - name: FreddyK
+    items:
+    - name: BingMaps
+      items:
+      - name: Setup
+        items:
+        - name: Tables
+          items:
+          - name: BingMaps Settings
+            uid: O:Table::FreddyK#BingMaps#Setup#BingMaps_Settings
+        - name: Codeunits
+          items:
+          - name: BingMaps Setup
+            uid: O:Codeunit::FreddyK#BingMaps#Setup#BingMaps_Setup
+        - name: Pages
+          items:
+          - name: BingMaps Settings
+            uid: O:Page::FreddyK#BingMaps#Setup#BingMaps_Settings
+          - name: BingMaps Setup
+            uid: O:Page::FreddyK#BingMaps#Setup#BingMaps_Setup
+      - name: Tables
+        items:
+        - name: BingMaps Customer
+          uid: O:Table::FreddyK#BingMaps#BingMaps_Customer
+      - name: Codeunits
+        items:
+        - name: BingMaps Geocode
+          uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Geocode
+        - name: BingMaps Show All
+          uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Show_All
+      - name: Pages
+        items:
+        - name: BingMaps Customer
+          uid: O:Page::FreddyK#BingMaps#BingMaps_Customer
+        - name: BingMaps CustomerMap
+          uid: O:Page::FreddyK#BingMaps#BingMaps_CustomerMap
+      - name: PageExtensions
+        items:
+        - name: BingMaps Cust Card
+          uid: O:PageExtension::FreddyK#BingMaps#BingMaps_Cust_Card
+        - name: BingMaps Cust List
+          uid: O:PageExtension::FreddyK#BingMaps#BingMaps_Cust_List

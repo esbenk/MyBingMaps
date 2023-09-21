@@ -1,0 +1,33 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: FreddyK.BingMaps."BingMaps CustomerMap"
+alId: ID 74121
+namespace: FreddyK.BingMaps
+baseKind: Page
+kind: Page
+parent: N:Module::BingMaps.PTE::Namespace::FreddyK.BingMaps
+langs:
+- al
+seeAlso:
+- '[Page](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-page-object)'
+objectProperties:
+- name: PageType
+  value: CardPart
+  promoted: true
+- name: SourceTable
+  value: "74120"
+  promoted: true
+  xrefType:
+    xref: O:Table::FreddyK#BingMaps#BingMaps_Customer
+    name: FreddyK.BingMaps."BingMaps Customer"
+    isExternal: false
+- name: Caption
+  value: Customer Map
+  promoted: false
+methods:
+- syntax:
+    content: procedure UpdateMap()
+  uid: M:Page::FreddyK#BingMaps#BingMaps_CustomerMap.UpdateMap
+  name: UpdateMap
+commentId: O:Page::FreddyK#BingMaps#BingMaps CustomerMap
+uid: O:Page::FreddyK#BingMaps#BingMaps_CustomerMap
+name: '"BingMaps CustomerMap"'

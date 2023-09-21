@@ -1,0 +1,71 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: FreddyK.BingMaps."BingMaps Geocode"
+alId: ID 74120
+namespace: FreddyK.BingMaps
+baseKind: Codeunit
+kind: Codeunit
+parent: N:Module::BingMaps.PTE::Namespace::FreddyK.BingMaps
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+methods:
+- syntax:
+    content: 'procedure GeocodeCustomer(Customer: Record Customer)'
+    parameters:
+    - id: Customer
+      parameterType:
+        name: Record Customer
+        isExternal: true
+  uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.GeocodeCustomer(Customer)
+  name: GeocodeCustomer
+- syntax:
+    content: 'procedure GeocodeCustomer(Customer: Record Customer, var BingMapsCustomer: Record "BingMaps Customer", var ErrorText: Text): Boolean'
+    parameters:
+    - id: Customer
+      parameterType:
+        name: Record Customer
+        isExternal: true
+    - id: BingMapsCustomer
+      parameterType:
+        name: Record "BingMaps Customer"
+        isExternal: true
+    - id: ErrorText
+      parameterType:
+        name: Text
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: false
+  uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.GeocodeCustomer(Customer,BingMaps_Customer@,Text@):Boolean
+  name: GeocodeCustomer
+- syntax:
+    content: 'procedure Geocode(BingMapsQuery: Text, var Latitude: Decimal, var Longitude: Decimal, var ErrorText: Text): Boolean'
+    parameters:
+    - id: BingMapsQuery
+      parameterType:
+        name: Text
+        isExternal: true
+    - id: Latitude
+      parameterType:
+        name: Decimal
+        isExternal: true
+    - id: Longitude
+      parameterType:
+        name: Decimal
+        isExternal: true
+    - id: ErrorText
+      parameterType:
+        name: Text
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: false
+  uid: M:Codeunit::FreddyK#BingMaps#BingMaps_Geocode.Geocode(Text,Decimal@,Decimal@,Text@):Boolean
+  name: Geocode
+commentId: O:Codeunit::FreddyK#BingMaps#BingMaps Geocode
+summary: Maps an address to a latitude and longitude using the Bing Maps REST API.
+uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Geocode
+name: '"BingMaps Geocode"'
