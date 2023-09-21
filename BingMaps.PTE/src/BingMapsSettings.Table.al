@@ -1,3 +1,5 @@
+namespace FreddyK.BingMaps.Setup;
+
 table 74122 "BingMaps Settings"
 {
     // version BingMaps

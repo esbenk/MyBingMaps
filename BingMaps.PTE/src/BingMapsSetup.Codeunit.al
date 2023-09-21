@@ -1,3 +1,9 @@
+namespace FreddyK.BingMaps.Setup;
+
+using Microsoft.Sales.Customer;
+using FreddyK.BingMaps;
+using System.Environment.Configuration;
+
 /// <summary>
 /// This codeunit is used to setup the BingMaps Integration
 /// </summary>

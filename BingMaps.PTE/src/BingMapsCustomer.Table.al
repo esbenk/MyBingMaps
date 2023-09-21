@@ -1,3 +1,5 @@
+namespace FreddyK.BingMaps;
+
 table 74120 "BingMaps Customer"
 {
     fields

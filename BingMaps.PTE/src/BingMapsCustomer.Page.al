@@ -1,3 +1,7 @@
+namespace FreddyK.BingMaps;
+
+using Microsoft.Sales.Customer;
+
 page 74124 "BingMaps Customer"
 {
     PageType = API;

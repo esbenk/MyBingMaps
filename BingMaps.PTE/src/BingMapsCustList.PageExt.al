@@ -1,3 +1,8 @@
+namespace FreddyK.BingMaps;
+
+using Microsoft.Sales.Customer;
+using FreddyK.BingMaps.Setup;
+
 pageextension 74123 "BingMaps Cust List" extends "Customer List"
 {
     layout

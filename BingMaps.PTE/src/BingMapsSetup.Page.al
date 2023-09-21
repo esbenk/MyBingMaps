@@ -1,3 +1,8 @@
+namespace FreddyK.BingMaps.Setup;
+
+using FreddyK.BingMaps;
+using System.Security;
+
 page 74122 "BingMaps Setup"
 {
     // version BingMaps

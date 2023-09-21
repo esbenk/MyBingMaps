@@ -1,3 +1,7 @@
+namespace FreddyK.BingMaps;
+
+using Microsoft.Sales.Customer;
+
 page 74121 "BingMaps CustomerMap"
 {
     PageType = CardPart;

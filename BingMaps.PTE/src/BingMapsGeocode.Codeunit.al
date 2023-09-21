@@ -1,3 +1,9 @@
+namespace FreddyK.BingMaps;
+
+using Microsoft.Sales.Customer;
+using Microsoft.Foundation.Address;
+using FreddyK.BingMaps.Setup;
+
 codeunit 74120 "BingMaps Geocode"
 {
     trigger OnRun();

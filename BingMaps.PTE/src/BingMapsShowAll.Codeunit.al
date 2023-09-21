@@ -1,3 +1,7 @@
+namespace FreddyK.BingMaps;
+
+using FreddyK.BingMaps.Setup;
+
 codeunit 74122 "BingMaps Show All"
 {
     trigger OnRun()
