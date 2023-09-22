@@ -4,6 +4,9 @@ using Microsoft.Sales.Customer;
 using Microsoft.Foundation.Address;
 using FreddyK.BingMaps.Setup;
 
+/// <summary>
+/// Geocode an address using BingMaps
+/// </summary>
 codeunit 74120 "BingMaps Geocode"
 {
     trigger OnRun();

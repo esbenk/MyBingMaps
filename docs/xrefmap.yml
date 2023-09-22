@@ -105,6 +105,8 @@ references:
   href: reference/bingmaps.pte/Module/BingMaps.PTE.html
 - uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Geocode
   name: "\"BingMaps Geocode\""
+  summary: >
+    <p sourcefile="reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.yml" sourcestartlinenumber="1" jsonPath="/summary">Geocode an address using BingMaps</p>
   fqName: FreddyK.BingMaps."BingMaps Geocode"
   href: reference/bingmaps.pte/Codeunit/FreddyK.BingMaps.BingMaps-Geocode.html
 - uid: O:Codeunit::FreddyK#BingMaps#BingMaps_Show_All
