@@ -3,5 +3,7 @@
   "templateUrl": "https://github.com/freddydk/AL-Go@ALDoc",
   "deployALDocArtifact": true,
   "UseCompilerFolder": true,
-  "DoNotPublishApps": true
+  "DoNotPublishApps": true,
+  "githubRunner": "ubuntu-latest",
+  "runs-on": "ubuntu-latest"
 }
