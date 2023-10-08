@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    shell: powershell
+    shell: pwsh
 
 permissions:
   contents: write
@@ -26,7 +26,7 @@ env:
 
 jobs:
   Initialization:
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     outputs:
       telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
       environmentsMatrixJson: ${{ steps.DetermineDeploymentEnvironments.outputs.EnvironmentsMatrixJson }}
@@ -51,14 +51,14 @@ jobs:
         id: init
         uses: freddydk/AL-Go/Actions/WorkflowInitialize@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           eventId: "DO0091"
 
       - name: Read settings
         id: ReadSettings
         uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           get: type
 
       - name: Determine Workflow Depth
@@ -70,14 +70,14 @@ jobs:
         id: determineProjectsToBuild
         uses: freddydk/AL-Go/Actions/DetermineProjectsToBuild@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           maxBuildDepth: ${{ env.workflowDepth }}
 
       - name: Determine Delivery Target Secrets
         id: DetermineDeliveryTargetSecrets
         uses: freddydk/AL-Go/Actions/DetermineDeliveryTargets@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           projectsJson: '${{ steps.determineProjectsToBuild.outputs.ProjectsJson }}'
           checkContextSecrets: 'N'
 
@@ -85,7 +85,7 @@ jobs:
         id: ReadSecrets
         uses: freddydk/AL-Go/Actions/ReadSecrets@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           gitHubSecrets: ${{ toJson(secrets) }}
           getSecrets: ${{ steps.DetermineDeliveryTargetSecrets.outputs.ContextSecrets }}
 
@@ -95,7 +95,7 @@ jobs:
         env:
           Secrets: '${{ steps.ReadSecrets.outputs.Secrets }}'
         with:
-          shell: powershell
+          shell: pwsh
           projectsJson: '${{ steps.determineProjectsToBuild.outputs.ProjectsJson }}'
           checkContextSecrets: 'Y'
 
@@ -105,12 +105,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          shell: powershell
+          shell: pwsh
           getEnvironments: '*'
           type: 'CD'
 
   CheckForUpdates:
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     needs: [ Initialization ]
     steps:
       - name: Checkout
@@ -119,13 +119,13 @@ jobs:
       - name: Read settings
         uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           get: templateUrl
 
       - name: Check for updates to AL-Go system files
         uses: freddydk/AL-Go/Actions/CheckForUpdates@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           parentTelemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
           templateUrl: ${{ env.templateUrl }}
 
@@ -173,7 +173,7 @@ jobs:
       - name: Read settings
         uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
 
       - name: Setup Pages
         if: needs.Initialization.outputs.deployALDocArtifact == 1
@@ -182,7 +182,7 @@ jobs:
       - name: Build ALDoc Documentation
         uses: freddydk/AL-Go/Actions/BuildALDoc@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v2
@@ -215,7 +215,7 @@ jobs:
       - name: Read settings
         uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
 
       - name: EnvName
         id: envName
@@ -228,7 +228,7 @@ jobs:
         id: ReadSecrets
         uses: freddydk/AL-Go/Actions/ReadSecrets@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           gitHubSecrets: ${{ toJson(secrets) }}
           getSecrets: '${{ steps.envName.outputs.envName }}-AuthContext,${{ steps.envName.outputs.envName }}_AuthContext,AuthContext,${{ steps.envName.outputs.envName }}-EnvironmentName,${{ steps.envName.outputs.envName }}_EnvironmentName,EnvironmentName,projects'
 
@@ -238,7 +238,7 @@ jobs:
         env:
           Secrets: '${{ steps.ReadSecrets.outputs.Secrets }}'
         with:
-          shell: powershell
+          shell: pwsh
           environmentName: ${{ matrix.environment }}
           artifacts: '.artifacts'
           type: 'CD'
@@ -251,7 +251,7 @@ jobs:
       matrix:
         deliveryTarget: ${{ fromJson(needs.Initialization.outputs.deliveryTargetsJson) }}
       fail-fast: false
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     name: Deliver to ${{ matrix.deliveryTarget }}
     steps:
       - name: Checkout
@@ -265,13 +265,13 @@ jobs:
       - name: Read settings
         uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
 
       - name: Read secrets
         id: ReadSecrets
         uses: freddydk/AL-Go/Actions/ReadSecrets@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           gitHubSecrets: ${{ toJson(secrets) }}
           getSecrets: '${{ matrix.deliveryTarget }}Context'
 
@@ -280,7 +280,7 @@ jobs:
         env:
           Secrets: '${{ steps.ReadSecrets.outputs.Secrets }}'
         with:
-          shell: powershell
+          shell: pwsh
           type: 'CD'
           projects: ${{ needs.Initialization.outputs.projects }}
           deliveryTarget: ${{ matrix.deliveryTarget }}
@@ -288,7 +288,7 @@ jobs:
 
   PostProcess:
     if: (!cancelled())
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     needs: [ Initialization, Build, Deploy, Deliver, DeployALDoc ]
     steps:
       - name: Checkout
@@ -298,6 +298,6 @@ jobs:
         id: PostProcess
         uses: freddydk/AL-Go/Actions/WorkflowPostProcess@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           eventId: "DO0091"
           telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
