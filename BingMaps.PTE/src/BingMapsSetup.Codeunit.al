@@ -9,23 +9,6 @@ using System.Environment.Configuration;
 /// </summary>
 codeunit 74123 "BingMaps Setup"
 {
-#    [EventSubscriber(ObjectType::Table, Database::"Service Connection", 'OnRegisterServiceConnection', '', true, true)]
-#    local procedure RegisterServiceConnection(Var ServiceConnection: Record "Service Connection")
-#    var
-#        BingMapsSettings: Record "BingMaps Settings";
-#        BingMapsSetup: Codeunit "BingMaps Setup";
-#        RecRef: RecordRef;
-#    begin
-#        if not BingMapsSettings.WritePermission() then
-#            exit;
-#        BingMapsSetup.GetSettings(BingMapsSettings);
-#        RecRef.GETTABLE(BingMapsSettings);
-#        ServiceConnection.Status := ServiceConnection.Status::Disabled;
-#        IF BingMapsSettings."BingMaps Key OK" THEN
-#            ServiceConnection.Status := ServiceConnection.Status::Enabled;
-#        ServiceConnection.InsertServiceConnection(ServiceConnection, RecRef.RecordId(), 'BingMaps Integration Setup', '', PAGE::"BingMaps Setup");
-#    end;
-
     procedure TestSettings(var BingMapsSettings: record "BingMaps Settings"; var ErrorText: Text): Boolean;
     var
         tempCustomer: Record Customer temporary;
