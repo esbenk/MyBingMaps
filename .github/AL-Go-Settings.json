@@ -1,5 +1,7 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/freddydk/AL-Go@ALDoc",
-  "deployALDocArtifact": true
+  "deployALDocArtifact": true,
+  "UseCompilerFolder": true,
+  "DoNotPublishApps": true
 }
