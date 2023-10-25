@@ -8,7 +8,7 @@ permissions:
 
 defaults:
   run:
-    shell: powershell
+    shell: pwsh
 
 env:
   workflowDepth: 1
@@ -17,7 +17,7 @@ env:
 
 jobs:
   Initialization:
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     outputs:
       telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
       githubRunner: ${{ steps.ReadSettings.outputs.GitHubRunnerJson }}
@@ -34,28 +34,27 @@ jobs:
 
       - name: Initialize the workflow
         id: init
-        uses: microsoft/AL-Go-Actions/WorkflowInitialize@v3.2
+        uses: freddydk/AL-Go/Actions/WorkflowInitialize@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           eventId: "DO0099"
 
       - name: Read settings
         id: ReadSettings
-        uses: microsoft/AL-Go-Actions/ReadSettings@v3.2
+        uses: freddydk/AL-Go/Actions/ReadSettings@ALDoc
         with:
-          shell: powershell
-          parentTelemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
-      
+          shell: pwsh
+
       - name: Determine Workflow Depth
         id: DetermineWorkflowDepth
         run: |
           Add-Content -Encoding UTF8 -Path $env:GITHUB_OUTPUT -Value "WorkflowDepth=$($env:workflowDepth)"
-          
+
       - name: Determine Projects To Build
         id: determineProjectsToBuild
-        uses: microsoft/AL-Go-Actions/DetermineProjectsToBuild@v3.2
+        uses: freddydk/AL-Go/Actions/DetermineProjectsToBuild@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           maxBuildDepth: ${{ env.workflowDepth }}
 
   Build:
@@ -65,7 +64,7 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.Initialization.outputs.buildOrderJson)[0].buildDimensions }}
       fail-fast: false
-    name: Build ${{ matrix.project }} - ${{ matrix.buildMode }}
+    name: Build ${{ matrix.projectName }} (${{ matrix.buildMode }})
     uses: ./.github/workflows/_BuildALGoProject.yaml
     secrets: inherit
     with:
@@ -73,15 +72,16 @@ jobs:
       runsOn: ${{ needs.Initialization.outputs.githubRunner }}
       parentTelemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
       project: ${{ matrix.project }}
+      projectName: ${{ matrix.projectName }}
       buildMode: ${{ matrix.buildMode }}
       projectDependenciesJson: ${{ needs.Initialization.outputs.projectDependenciesJson }}
-      secrets: 'licenseFileUrl,insiderSasToken,codeSignCertificateUrl,codeSignCertificatePassword,keyVaultCertificateUrl,keyVaultCertificatePassword,keyVaultClientId,gitHubPackagesContext,applicationInsightsConnectionString'
+      secrets: 'licenseFileUrl,codeSignCertificateUrl,*codeSignCertificatePassword,keyVaultCertificateUrl,*keyVaultCertificatePassword,keyVaultClientId,gitHubPackagesContext,applicationInsightsConnectionString'
       publishThisBuildArtifacts: ${{ needs.Initialization.outputs.workflowDepth > 1 }}
       artifactsNameSuffix: 'NextMajor'
 
   PostProcess:
     if: always()
-    runs-on: [ windows-latest ]
+    runs-on: [ ubuntu-latest ]
     needs: [ Initialization, Build ]
     steps:
       - name: Checkout
@@ -89,8 +89,8 @@ jobs:
 
       - name: Finalize the workflow
         id: PostProcess
-        uses: microsoft/AL-Go-Actions/WorkflowPostProcess@v3.2
+        uses: freddydk/AL-Go/Actions/WorkflowPostProcess@ALDoc
         with:
-          shell: powershell
+          shell: pwsh
           eventId: "DO0099"
           telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
