@@ -11,6 +11,9 @@ table 74122 "BingMaps Settings"
         {
             DataClassification = SystemMetadata;
         }
+        /// <summary>
+        /// The license key for Bing Maps. This key is used for the Bing Maps AJAX control.
+        /// </summary>
         field(74121; "BingMaps Key"; Text[80])
         {
             DataClassification = SystemMetadata;
