@@ -3,6 +3,9 @@ namespace FreddyK.BingMaps.Setup;
 using FreddyK.BingMaps;
 using System.Security;
 
+/// <summary>
+/// The page for setting up the BingMaps integration.
+/// </summary>
 page 74122 "BingMaps Setup"
 {
     // version BingMaps
