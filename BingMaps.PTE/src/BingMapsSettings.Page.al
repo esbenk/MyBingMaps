@@ -1,5 +1,6 @@
 namespace FreddyK.BingMaps.Setup;
 
+using Microsoft.Utilities;
 using FreddyK.BingMaps;
 
 page 74125 "BingMaps Settings"
