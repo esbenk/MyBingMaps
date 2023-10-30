@@ -5,6 +5,12 @@
     },
     {
       "path": "BingMaps.PTE"
+    },
+    {
+      "path": "docfx"
+    },
+    {
+      "path": ".aldoc"
     }
   ],
   "settings": {}
