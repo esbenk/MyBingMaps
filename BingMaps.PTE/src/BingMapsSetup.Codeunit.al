@@ -5,10 +5,28 @@ using FreddyK.BingMaps;
 using System.Environment.Configuration;
 
 /// <summary>
-/// This codeunit is used to setup the BingMaps Integration
+/// This **codeunit** is used to setup the BingMaps Integration
 /// </summary>
+/// <example>
+/// <code>
+/// procedure UseTestSettings()
+/// var
+///   BingMapsSettings: Record "BingMaps Settings";
+///   BingMapsSetup: Codeunit "BingMaps Setup";
+/// begin
+///   if not BingMapsSetup.TestSettings(BingMapsSettings) then
+///     error('BingMaps Integration is not setup correctly'); 
+/// end;
+/// </code>
+/// </example>
 codeunit 74123 "BingMaps Setup"
 {
+    /// <summary>
+    /// This method is testing the settings
+    /// </summary>
+    /// <param name="BingMapsSettings">The BingMap settings</param>
+    /// <param name="ErrorText">The error texts</param>
+    /// <returns></returns>
     procedure TestSettings(var BingMapsSettings: record "BingMaps Settings"; var ErrorText: Text): Boolean;
     var
         tempCustomer: Record Customer temporary;
